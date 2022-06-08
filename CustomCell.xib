@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="151" id="KGk-i7-Jjw" customClass="CustomCell" customModule="Design1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="151"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="151"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SE6-n5-aMU">
+                        <rect key="frame" x="10" y="10" width="329" height="120"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bkT-us-TGX">
+                                <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VjY-z2-pa7"/>
+                                    <constraint firstAttribute="width" constant="100" id="Zon-yU-4KD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="STJ-JC-2v8">
+                                <rect key="frame" x="157" y="10" width="65.5" height="29"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seK-pp-Iby">
+                                <rect key="frame" x="157" y="89" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="seK-pp-Iby" firstAttribute="leading" secondItem="bkT-us-TGX" secondAttribute="trailing" constant="47" id="9SZ-mi-T59"/>
+                            <constraint firstItem="STJ-JC-2v8" firstAttribute="leading" secondItem="bkT-us-TGX" secondAttribute="trailing" constant="47" id="AMW-hC-8KQ"/>
+                            <constraint firstItem="seK-pp-Iby" firstAttribute="bottom" secondItem="bkT-us-TGX" secondAttribute="bottom" id="L4R-IY-J7q"/>
+                            <constraint firstItem="STJ-JC-2v8" firstAttribute="top" secondItem="bkT-us-TGX" secondAttribute="top" id="gcY-vq-O2a"/>
+                            <constraint firstItem="bkT-us-TGX" firstAttribute="top" secondItem="SE6-n5-aMU" secondAttribute="top" constant="10" id="kC3-Mi-cx5"/>
+                            <constraint firstItem="bkT-us-TGX" firstAttribute="leading" secondItem="SE6-n5-aMU" secondAttribute="leading" constant="10" id="nJ9-9G-WxD"/>
+                            <constraint firstAttribute="bottom" secondItem="bkT-us-TGX" secondAttribute="bottom" constant="10" id="rbb-nH-foD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SE6-n5-aMU" secondAttribute="trailing" constant="10" id="Dpq-Vx-XAr"/>
+                    <constraint firstItem="SE6-n5-aMU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Gts-Py-xFt"/>
+                    <constraint firstItem="SE6-n5-aMU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="QVS-3m-gte"/>
+                    <constraint firstItem="SE6-n5-aMU" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TD8-ia-gKZ"/>
+                    <constraint firstAttribute="bottom" secondItem="SE6-n5-aMU" secondAttribute="bottom" constant="10" id="rA2-Ch-ZIX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customView" destination="SE6-n5-aMU" id="oYY-oB-EG7"/>
+                <outlet property="myImageview" destination="bkT-us-TGX" id="mi1-Um-iP3"/>
+                <outlet property="myLabel1" destination="STJ-JC-2v8" id="dTT-SR-cxZ"/>
+                <outlet property="myLabel2" destination="seK-pp-Iby" id="4dK-WU-YQ3"/>
+            </connections>
+            <point key="canvasLocation" x="-441.304347826087" y="3.683035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
